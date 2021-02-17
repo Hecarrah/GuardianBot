@@ -1,12 +1,11 @@
 module.exports = {
     name: 'react',
-    description: 'React with Miah smile emoji.',
+    description: 'WAH!.',
     execute(message, command, args) {
         const filter = (reaction, user) => {
             return ['chuWAH'].includes(reaction.emoji.name) && !user.bot;
         };
-
-        message.react('757268464506503228');
+        
         message.react('809791748703387698');
 
         const collector = message.createReactionCollector(filter);
